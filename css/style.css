@@ -1,40 +1,38 @@
 /* ATSV Forchheim Damen – Pink/Schwarz Designgrundlage */
 :root {
-  --pink: #ff2f92;
-  --pink-dark: #b81462;
-  --pink-light: #ff72b5;
-  --black: #080808;
-  --black-soft: #121212;
+  --pink: #e6006d;
+  --pink-dark: #a8004f;
+  --pink-light: #ff3f96;
+  --black: #050505;
+  --black-soft: #111111;
   --white: #ffffff;
-  --text-muted: #b9b9b9;
-  --border: rgba(255, 47, 146, 0.45);
-  --glow: rgba(255, 47, 146, 0.22);
+  --text-muted: #c4c4c4;
+  --border: rgba(230, 0, 109, 0.55);
+  --glow: rgba(230, 0, 109, 0.28);
 }
 
 * { box-sizing: border-box; }
-
 html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
   min-height: 100vh;
   background:
-    radial-gradient(circle at 50% -10%, rgba(255, 47, 146, 0.13), transparent 42%),
+    radial-gradient(circle at 10% 0%, rgba(230, 0, 109, 0.18), transparent 32%),
+    radial-gradient(circle at 90% 100%, rgba(230, 0, 109, 0.12), transparent 30%),
     var(--black);
   color: var(--white);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 a { color: inherit; text-decoration: none; }
-
-/* Grundelemente für die spätere Seite */
 .page-shell { width: min(1200px, 94%); margin: 0 auto; }
 
 .card {
-  background: linear-gradient(145deg, #151515, #0b0b0b);
+  background: linear-gradient(145deg, #151515, #070707);
   border: 1px solid var(--border);
   border-radius: 16px;
-  box-shadow: 0 0 24px var(--glow);
+  box-shadow: 0 0 28px var(--glow);
 }
 
 .btn {
@@ -46,9 +44,10 @@ a { color: inherit; text-decoration: none; }
   border-radius: 10px;
   background: var(--pink);
   color: var(--white);
-  font-weight: 800;
+  font-weight: 900;
+  letter-spacing: .5px;
   border: 1px solid var(--pink-light);
-  box-shadow: 0 0 18px var(--glow);
+  box-shadow: 0 0 20px var(--glow);
 }
 
 .section-title {
@@ -56,7 +55,6 @@ a { color: inherit; text-decoration: none; }
   font-weight: 900;
   letter-spacing: 1px;
 }
-
 .section-title span { color: var(--pink); }
 
 @media (max-width: 700px) {
